@@ -20,14 +20,14 @@ header {
 
 #titulo {
     font-family: "Montserrat", sans-serif;
-    font-size: 24px; /*le damos un tamaño de fuente de 24px*/
+    font-size: 30px; /*le damos un tamaño de fuente de 24px*/
     font-weight: bold;
     color: #386458;
 }
 
 
 /*NAVEGACIÓN (ENCABEZADO)*/
-nav {
+.nav-principal {
     font-size: 14px; /*le damos un tamaño de fuente de 14px*/
     font-weight: 400; /*le damos un peso de fuente de 400*/
     display: flex; /*le decimos que sea un contenedor flexible */
@@ -36,17 +36,17 @@ nav {
     gap: 20px; /*le damos un espacio entre los elementos de 20px*/
 }
 
-nav a { /*le damos un estilo a los enlaces del nav*/
+.nav-principal a { /*le damos un estilo a los enlaces del nav*/
     text-decoration: none; /*le decimos que no tenga subrayado*/
     color: #404845; 
 }
 
-nav a:hover { /*le damos un estilo a los enlaces del nav cuando el mouse esta encima de ellos*/
+.nav-principal a:hover { /*le damos un estilo a los enlaces del nav cuando el mouse esta encima de ellos*/
     color: #386458; /*le damos un color diferente cuando el mouse esta encima de ellos*/
     font-weight: bold;
 }
 
-.activo { /*le damos un estilo a los enlaces del nav cuando esten en la pagina de ese enlace*/
+.nav-principal .activo { /*le damos un estilo a los enlaces del nav cuando esten en la pagina de ese enlace*/
     color: #386458;
     font-weight: bold; 
     border-bottom: 2px solid #386458; /*le damos un borde inferior de 2px y color #386458*/

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #f5f5f5;
+}
+
+.section-inicio {
+    display: flex; /*le decimos que sea un contenedor flexible */
+    align-items: center; /*le decimos que los elementos se alineen en el centro del contenedor*/
+    justify-content: space-between; /*separa el texto de la imagen*/
+    gap: 50px; /*espacio entre el texto y la imagen*/
+    padding: 60px;
+}
+
+.inicio {
+    flex: 1; /*le decimos que ocupe todo el espacio disponible*/
+}
+
+
+/*TITULO Y TEXTO*/
+.titulo-inicio {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px; /*le damos un tamaño de fuente de 36px*/
+    font-weight: bold;
+    color: #386458;
+    margin-bottom: 20px; /*le damos un margen inferior de 20px*/
+}
+
+.texto-inicio {
+    font-size: 20px; /*le damos un tamaño de fuente de 18px*/
+    color: #404845;
+    margin-bottom: 30px; /*le damos un margen inferior de 30px*/
+}
+
+
+/*BOTONES*/
+.botones-inicio {
+    display: flex; /*le decimos que sea un contenedor flexible */
+    gap: 15px; /*le damos un espacio entre los elementos de 15px*/
+    margin-top: 25px; /*le damos un margen superior de 25px*/
+}
+
+.agendar-cita-inicio {
+    display: flex; /*le decimos que sea un contenedor flexible */
+    align-items: center; /*le decimos que los elementos se alineen en el centro del contenedor*/
+    justify-content: center; /*le decimos que los elementos se centren en el contenedor*/
+    gap: 5px; /*le damos un espacio entre los elementos de 10px*/
+    background-color: #386458;
+    color: #FFFFFF;
+    border: none; /*le decimos que no tenga borde*/
+    border-radius: 10px; /*le damos un borde redondeado de 10px*/
+    padding: 12px 24px; /*le damos un padding de 12px arriba y abajo y 24px a los lados*/
+}
+
+.conocer-servicios {
+    text-align: center; 
+    padding: 15px;
+    border-radius: 10px; /*le damos un borde redondeado de 10px*/
+    border: 2px solid #386458; /*le damos un borde de 2px y color #386458*/
+    color: #386458;
+}
+
+
+/*BOTONES CON HOVER*/
+.agendar-cita-inicio:hover { /*le damos un estilo cuando el mouse esta encima de ellos*/
+    background-color: #507D70; /*le damos un color diferente cuando el mouse esta encima de ellos*/
+    font-weight: bold;
+}
+
+
+.conocer-servicios:hover { /*le damos un estilo cuando el mouse esta encima de ellos*/
+    background-color: #386458;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/*IMAGEN*/
+.img-inicio {
+    flex: 1; /*le decimos que ocupe todo el espacio disponible*/
+    width: 100%; /*le decimos que ocupe todo el ancho del contenedor*/
+    max-width: 1000px; /*le decimos que no ocupe mas de 800px de ancho*/
+    height: auto; /*le decimos que la altura se ajuste automaticamente al ancho*/
+    display: block; /*le decimos que sea un bloque para que no tenga margen por defecto*/
+    border-radius: 10px; /*le damos un borde redondeado de 10px*/
+}
+
+
+/*SVG*/
+.svg-calendario {
+    width: 20px; /*le damos un ancho de 20px*/
+    height: 20px; /*le damos una altura de 20px*/
+}

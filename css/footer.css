@@ -1,0 +1,84 @@
+.footer {
+    background-color: #eef5f7; /*fondo del footer*/
+    padding: 100px;
+}
+
+.footer-contenido {
+    display: flex; /*le decimos que sea un contenedor flexible */
+    justify-content: space-between; /*separa los elementos del footer*/
+}
+
+
+/*TEXTO (FOOTER)*/
+.footer-nutrivida {
+    width: 30%; /*le decimos que ocupe el 30% del ancho del footer*/
+}
+
+.footer-nutrivida h3 {
+    font-size: 24px; /*le damos un tamaño de fuente de 24px*/
+    color: #386458;
+    margin-top: 0;
+}
+
+.footer-nutrivida p {
+    color: #404845;
+    line-height: 1.5; /*le damos un interlineado de 1.5 para que el texto no quede tan pegado*/
+}
+
+
+/*NAVEGACIÓN (FOOTER)*/
+.footer-navegacion {
+    width: 30%; /*le decimos que ocupe el 30% del ancho del footer*/
+}
+
+.footer-navegacion h4 {
+    font-size: 18px; /*le damos un tamaño de fuente de 18px*/
+    margin-bottom: 20px; /*le damos un margen inferior de 20px*/
+}
+
+.footer-navegacion ul {
+    list-style: none; /*quita los puntos*/
+    padding: 0;
+}
+
+.footer-navegacion li {
+    margin-bottom: 10px;
+}
+
+.footer-navegacion a {
+    text-decoration: none; /*quita el subrayado*/
+    color: #404845;
+}
+
+.footer-navegacion a:hover {
+    color: #386458;
+}
+
+
+/*CONTACTO (FOOTER)*/
+.footer-ubicacion {
+    width: 30%;
+    font-style: normal; /*quita la cursiva que address coloca por defecto*/
+}
+
+.footer-ubicacion h5 {
+    font-size: 18px; /*le damos un tamaño de fuente de 18px*/
+    margin-bottom: 20px; /*le damos un margen inferior de 20px*/
+}
+
+
+/*MAPA*/
+.mapa-ubicacion { /*le damos un estilo al mapa*/
+    width: 100%; /*le decimos que ocupe el 100% del ancho del contenedor*/
+    height: 200px; /*le decimos que tenga una altura de 200px*/
+}
+
+
+/*COPYRIGHT*/
+.footer-copy {
+    text-align: center; /*le decimos que el texto se centre*/
+    border-top: 1px solid #d9e2e3; /*creamos la linea superior*/
+    margin-top: 50px;
+    padding-top: 25px;
+    font-size: 13px;
+}

@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/navegacion.css">
-    <script src="/js/funciones.js" defer></script>
+    <link rel="stylesheet" href="/css/navegacion.css"> <!--estilos de navegacion-->
+    <link rel="stylesheet" href="/css/inicio.css"> <!--estilos del inicio-->
+    <link rel="stylesheet" href="/css/footer.css"> <!--estilos del footer-->
+    <script src="/js/funciones.js" defer></script> <!--funciones js-->
     <title>NutriVida</title>
 </head>
 <body>
     <!--Encabezado-->
     <header>
-        <h1 id="Titulo">NutriVida</h1>
+        <h1 id="titulo">NutriVida</h1>
         <!---navegación-->
-        <nav>
+        <nav class="nav-principal">
             <a href="index.html" class="activo">Inicio</a>
-            <a href="#">Servicios</a>
+            <a href="servicios.html">Servicios</a>
             <a href="#">Nosotros</a>
-            <a href="#">Nutricionistas</a>
+            <a href="nutricionistas.html">Nutricionistas</a>
             <a href="#">Contacto</a>
         </nav>
 
@@ -27,6 +29,62 @@
         </div>
     </header>
 
+    <!--Inicio-->
+    <main>
+        <!--Sección del inicio-->
+        <section class="section-inicio">
+            
+            <div class="inicio"><!--div para que todo esté dentro de una "caja"-->
+                <h2 class="titulo-inicio">Tu Bienestar comienza con una nutrición personalizada</h2>
+                <p class="texto-inicio">En NutriVida, te acompañamos en el camino hacia una vida más saludable con planes de alimentación diseñados exclusivamente para ti.</p>
+            
+                <div class="botones-inicio"> <!--para que los botones esten en una "caja"-->
+                    <button class="agendar-cita-inicio">Agendar Cita <!--añadimos el boton de agendar cita-->
+                    <!--añadimos un svg de calendario-->
+                    <svg class="svg-calendario" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M16 19h6" /><path d="M19 16v6" /></svg> 
+                    </button>
+
+                    <button class="conocer-servicios">Conocer Servicios</button>
+                </div>
+            </div>
+            
+            <img class="img-inicio" src="/img/inicio/imagen_inicio.png" alt="imagen de nutricionista">
+        </section>
+
+    </main>
+
+    <footer class="footer"> <!--creamos el footer-->
+
+        <section class="footer-contenido"> <!--section del footer-->
+
+            <section class="footer-nutrivida"> 
+                <h3>NutriVida</h3>
+
+                <p>Clínica de Nutrición Especializada en Temuco, comprometida con tu salud y bienestar desde 2016.</p>
+            </section>
+
+            <nav class="footer-navegacion"> <!--navegación del footer-->
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="nutricionistas.html">Nutricionistas</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-ubicacion"> <!--creamos un address para el "contacto"-->
+                <h5>Ubicación</h5>
+                <!--importamos un iframe directo de google maps-->
+                <iframe class="mapa-ubicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6406.418374455775!2d-72.5920174363592!3d-38.74030187186753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1788549148046!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </address>
+
+        </section>
+
+        <p class="footer-copy">© 2026 NutriVida. Todos los derechos reservados.</p>
+
+    </footer>
 
 </body>
 </html>
