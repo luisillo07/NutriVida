@@ -1,0 +1,91 @@
+/*le damos un estilo por defecto a toda la pagina*/
+body {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0; /*para que nada tenga un margen por defecto*/
+    padding: 0; /*para que nada tenga un padding por defecto*/
+    background-color: #E5E2DB;
+    color: #2D3436;
+}
+
+
+/*ENCABEZADO*/
+header {
+    display: flex; /*le decimos que sea un contenedor flexible */
+    justify-content: space-between; /*le damos un espacio a los elementos*/
+    padding-left: 60px;/*al encabezado le damos un padding a la izquierda y derecha por defecto*/
+    padding-right: 60px;
+    align-items: center;
+    background-color: #F4FAFD;
+}
+
+#titulo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px; /*le damos un tamaño de fuente de 24px*/
+    font-weight: bold;
+    color: #386458;
+}
+
+
+/*NAVEGACIÓN (ENCABEZADO)*/
+nav {
+    font-size: 14px; /*le damos un tamaño de fuente de 14px*/
+    font-weight: 400; /*le damos un peso de fuente de 400*/
+    display: flex; /*le decimos que sea un contenedor flexible */
+    align-items: center; /*le decimos que los elementos se alineen en el centro del contenedor*/
+    justify-content: center; /*le decimos que los elementos se centren en el contenedor*/
+    gap: 20px; /*le damos un espacio entre los elementos de 20px*/
+}
+
+nav a { /*le damos un estilo a los enlaces del nav*/
+    text-decoration: none; /*le decimos que no tenga subrayado*/
+    color: #404845; 
+}
+
+nav a:hover { /*le damos un estilo a los enlaces del nav cuando el mouse esta encima de ellos*/
+    color: #386458; /*le damos un color diferente cuando el mouse esta encima de ellos*/
+    font-weight: bold;
+}
+
+.activo { /*le damos un estilo a los enlaces del nav cuando esten en la pagina de ese enlace*/
+    color: #386458;
+    font-weight: bold; 
+    border-bottom: 2px solid #386458; /*le damos un borde inferior de 2px y color #386458*/
+    padding-bottom: 4px; /*le damos un padding inferior de 4px para que el borde no quede pegado al texto*/
+}
+
+
+/*BOTONES NAVEGACiÓN*/
+.b {
+    font-size: 14px; /*le damos un tamaño de fuente de 14px*/
+    font-weight: 400; /*le damos un peso de fuente de 400*/
+    display: flex; /*le decimos que sea un contenedor flexible */
+    align-items: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.iniciar-sesion {
+    color: #386458;
+    background-color: transparent; /*le decimos que el fondo sea transparente*/
+    border: none; /*le decimos que no tenga borde*/
+}
+
+.agendar-cita {
+    background-color: #386458;
+    color: #FFFFFF;
+    border: none; /*le decimos que no tenga borde*/
+    border-radius: 10px; /*le damos un borde redondeado de 10px*/
+    padding: 12px 24px; /*le damos un padding de 12px arriba y abajo y 24px a los lados*/
+}
+
+.iniciar-sesion:hover {
+    color: #507D70; /*le damos un color diferente cuando el mouse esta encima de ellos*/
+    font-weight: bold;
+}
+
+.agendar-cita:hover {
+    background-color: #507D70; /*le damos un color diferente cuando el mouse esta encima de ellos*/
+    font-weight: bold;
+}
+
+
