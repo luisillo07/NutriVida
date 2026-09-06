@@ -73,3 +73,14 @@ button {
 button:hover {
     background-color: #386458;
 }
+
+/*CAMPO ERROR/MENSAJE*/
+.campo-error {
+    border: 2px solid red;
+}
+
+#mensaje-error {
+    color: red;
+    font-size: 14px;
+    margin: 5px;
+}

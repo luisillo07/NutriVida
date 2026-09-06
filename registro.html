@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/registro.css">
+    <script src="/js/registro.js" defer></script>
     <title>NutriVida|Registro</title>
 </head>
 <body>
@@ -11,8 +12,7 @@
         <!--se crea el registro-->
         <section class="registro">
 
-            <!--se hace un div para que se vea como una carta-->
-            <div class="contenedor-registro">
+            <form class="contenedor-registro" id="form-registro">
 
                 <h1>Crear Cuenta</h1>
 
@@ -31,15 +31,15 @@
 
                 <label for="confirmar-password">Confirmar Contraseña</label>
                 <input type="password" name="confirmar-password" id="confirmar-password" placeholder="********" required>
+            
+                <!--mensaje donde se mostraran los errores-->
+                <p id="mensaje-error"></p>
 
-                <!--boton para crear la cuenta-->
                 <button type="submit">Registrarse</button>
 
-                <!--link que redirige a la pagina de inicio de sesion-->
-                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesión</a></p>
+                <p>¿Ya tienes una cuenta?<a href="login.html"> Inicia Sesión</a></p>
 
-            </div>
-
+            </form>
         </section>
     </main>
 </body>
