@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js" defer></script>
     <title>NutriVida|Login</title>
 </head>
 <body>
     <main>
         <!--se crea el login-->
         <section class="login">
-            <!--se hace un div para que se vea como una carta-->
-            <div class="contenedor-login">
+
+            <!--se hace un formulario para iniciar sesion-->
+            <form class="contenedor-login" id="form-login">
+
                 <h1>Iniciar Sesión</h1>
 
-                <!--se crean los input de correo y contraseña con sus placeholder respectivoss-->
+                <!--se crean los input de correo y contraseña con sus placeholder respectivos-->
                 <label for="email">Correo Electronico</label>
                 <input type="email" name="email" id="email" placeholder="nutrivida@nutri.com" required>
                 
                 <label for="password">Contraseña</label>
                 <input type="password" name="password" id="password" placeholder="nutri123" required>
+
+                <!--mensaje para mostrar los errores-->
+                <p id="mensaje-error"></p>
 
                 <!--se hace un link donde se podrá recuperar la contraseña-->
                 <a href="#">¿Olvidaste tu contraseña?</a>
@@ -30,8 +36,10 @@
                 <!--link que redirige a la pagina de registro-->
                 <p>¿No tienes una cuenta? <a href="registro.hmtl">Regístrate</a></p>
 
-            </div>
+            </form>
+
         </section>
     </main>
+    <script src="/js/login.js"></script>
 </body>
 </html>

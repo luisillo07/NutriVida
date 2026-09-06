@@ -71,3 +71,14 @@ button {
 button:hover {
     background-color: #386458; /*para que el boton cambie de color al pasar por encima*/
 }
+
+/*MENSAJE DE ERROR - CAMPO DE ERROR*/
+.campo-error {
+    border: 2px solid red; /*marca en rojo el campo que tenga un error*/
+}
+
+#mensaje-error {
+    color: red; /*color del mensaje de error*/
+    font-size: 14px;
+    margin: 5px;
+}
