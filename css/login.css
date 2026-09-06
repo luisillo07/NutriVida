@@ -1,0 +1,73 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0; /*para que nada tenga un margen por defecto*/
+    background-color: #c0e5d1a7;
+    color: #26342c;
+}
+
+
+/*ESTILOS DEL LOGIN*/
+.login{
+    display: flex; /*para que podamos utilizar propiedades del flexbox*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*para que el login ocupe toda la altura de la pantalla*/
+}
+
+
+/*ESTILOS DEL CONTENEDOR DEL LOGIN*/
+.contenedor-login {
+    display: flex; /*para que podamos utilizar propiedades del flexbox*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*para que los elementos se alineen en columna*/
+    background-color: #ffffff;
+    border-radius: 10px; /*para que los bordes sean redondeados*/
+    padding: 50px;
+    gap: 10px; /*para que haya un espacio entre los elementos*/
+}
+
+
+/*ESTILOS DEL TITULO*/
+h1 {
+    color: #183d2b;
+    font-size: 40px;
+}
+
+
+/*ESTILOS DE LOS INPUTS*/
+input {
+    width: 100%; /*para que el input ocupe todo el ancho del contenedor*/
+    padding: 10px;
+    margin-bottom: 10px; /*para que haya un espacio entre los inputs*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/*ESTILOS DE LOS LINKS*/
+a {
+    text-decoration: none;
+    color: #3da56d;
+}
+
+a:hover {
+    color: #386458; /*para que el link cambie de color al pasar por encima*/
+    text-decoration: underline; /*para que el link tenga un subrayado al pasar por encima*/
+}
+
+
+/*ESTILOS DEL BOTON*/
+button {
+    width: 100%; /*para que el boton ocupe todo el ancho del contenedor*/
+    padding: 10px;
+    background-color: #3da56d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*para que el cursor cambie al pasar por encima del boton*/
+}
+
+button:hover {
+    background-color: #386458; /*para que el boton cambie de color al pasar por encima*/
+}
