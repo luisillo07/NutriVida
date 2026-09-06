@@ -76,8 +76,8 @@ header {
     padding-top: 18px; /*le damos un padding superior de 18px para que el borde no quede pegado al texto*/
 }
 
-table, tr, td {
-    background-color: #ffffff; /*le damos un color de fondo #ffffff*/
+.busqueda > table, table > tr > td {
+    background-color: #ffffff; /*le damos un fondo blanco*/
     margin: 0; /*para que nada tenga un margen por defecto*/
     padding: 0; /*para que nada tenga un padding por defecto*/
     width: 100%; /*le damos un ancho de 100% para que ocupen todo el ancho de sus contenedores*/
@@ -93,4 +93,42 @@ input {
     border-radius: 10px;
     border: none; /*le decimos que no tenga borde*/
     text-align: left; /*le decimos que el texto se alinee a la izquierda*/
+}
+
+/*SECCIÓN NUTRICIONISTAS*/
+.lista-nutricionistas {
+    display: flex; /*le decimos que sea una grilla*/
+    gap: 20px; /*espacio entre tarjetas*/
+    padding: 20px; /*padding igual al del header*/
+}
+
+.tarjeta-nutricionista {
+    display: flex; /*imagen a la izquierda, tabla a la derecha*/
+    background-color: #DFEBE5;
+    border-radius: 10px;
+    padding: 15px;
+}
+ 
+.tarjeta-nutricionista .imagenes { /*con esto solo afectamos a las imágenes dentro de las tarjetas*/
+    width: 240px; /*sobreescribe el ancho de 100px por defecto para esta sección*/
+    border-radius: 8px;
+    margin-right: 20px; /*espacio entre la imagen y la tabla*/
+}
+ 
+.tarjeta-nutricionista table { /*con esto solo afectamos a las tablas dentro de las tarjetas*/
+    flex: 1; /*ocupa el resto del espacio disponible*/
+    border-spacing: 10px; /*espacio entre las celdas de la tabla*/
+}
+ 
+.nombre-nutricionista {
+    font-family: "Montserrat", sans-serif; /*Le damos una fuente al texto(de momento de prueba)*/
+    font-size: 150%;
+    color: #2D3436;
+    height: 30px; /*altura de la celda para que no se vea tan apretado el texto*/
+}
+ 
+.info-nutricionista {
+    font-size: 125%;
+    color: #404845;
+    text-align: justify; /*justifica el texto para que se vea más ordenado*/
 }
