@@ -64,28 +64,33 @@ header {
     gap: 20px;
 }
 
-.iniciar-sesion {
-    color: #386458;
-    background-color: transparent; /*le decimos que el fondo sea transparente*/
-    border: none; /*le decimos que no tenga borde*/
+/*BARRA DE BUSQUEDA*/
+.busqueda {
+    background-color: #DFEBE5; /*le damos un color de fondo #DFEBE5*/
+    border-radius: 15px; /*le damos un borde redondeado de 15px*/
+    margin: 10px; 
+    height: 40px;
+    padding-bottom: 18px; /*le damos un padding inferior de 18px para que el borde no quede pegado al texto*/
+    padding-left: 20px; /*le damos un padding izquierdo de 20px para que el borde no quede pegado al texto*/
+    padding-right: 20px; /*le damos un padding derecho de 20px para que el borde no quede pegado al texto*/
+    padding-top: 18px; /*le damos un padding superior de 18px para que el borde no quede pegado al texto*/
 }
 
-.agendar-cita {
-    background-color: #386458;
-    color: #FFFFFF;
-    border: none; /*le decimos que no tenga borde*/
+table, tr, td {
+    background-color: #ffffff; /*le damos un color de fondo #ffffff*/
+    margin: 0; /*para que nada tenga un margen por defecto*/
+    padding: 0; /*para que nada tenga un padding por defecto*/
+    width: 100%; /*le damos un ancho de 100% para que ocupen todo el ancho de sus contenedores*/
+    height: 100%; /*le damos un alto de 100% para que ocupen todo el alto de sus contenedores*/
     border-radius: 10px; /*le damos un borde redondeado de 10px*/
-    padding: 12px 24px; /*le damos un padding de 12px arriba y abajo y 24px a los lados*/
 }
 
-.iniciar-sesion:hover {
-    color: #507D70; /*le damos un color diferente cuando el mouse esta encima de ellos*/
-    font-weight: bold;
+input {
+    width: 99%; 
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 0px;
+    border-radius: 10px;
+    border: none; /*le decimos que no tenga borde*/
+    text-align: left; /*le decimos que el texto se alinee a la izquierda*/
 }
-
-.agendar-cita:hover {
-    background-color: #507D70; /*le damos un color diferente cuando el mouse esta encima de ellos*/
-    font-weight: bold;
-}
-
-
