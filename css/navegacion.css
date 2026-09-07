@@ -70,6 +70,10 @@ header {
     border: none; /*le decimos que no tenga borde*/
 }
 
+.b a {
+    text-decoration: none;
+}
+
 .agendar-cita {
     background-color: #386458;
     color: #FFFFFF;
