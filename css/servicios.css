@@ -1,0 +1,45 @@
+/*SECCIÓN SERVICIOS*/
+
+.lista-servicios{
+    display: flex; /*le decimos que sea una grilla*/
+    gap: 50px; /*espacio entre tarjetas*/
+    padding: 20px; /*padding igual al del header*/
+}
+
+.tarjeta-servicio{
+    background-color: #DFEBE5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%; /*la tarjeta ocupa la mitad de su propio contenedor*/
+    box-sizing: border-box; /*para que el padding no afecte al ancho de la tarjeta*/
+    transition: box-shadow 0.1s;
+}
+
+.tarjeta-servicio:hover{
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.14); /*sombra de la tarjeta cuando el mouse*/
+    transform: translateY(-1px); /*se mueve hacia arriba 1px cuando se pasa el mouse*/
+    background-color: #A7C4BC;
+}
+
+.tarjeta-servicio table{
+    border-spacing: 5px; /*espacio entre cada línea de las tablas*/
+}
+
+.nombre-servicio{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: #2D3436;
+    height: 20px; /*altura de la celda para que no se vea tan apretado el texto*/
+}
+
+.precio-servicio{
+    font-size: 18px; /*un poco más grande que la info para que destaque*/
+    color: #2D3436;
+}
+
+.info-servicio{
+    font-size: 14px;
+    color: #404845;
+    text-align: justify; /*texto justificado*/
+    width: 100%; /*se ocupa todo el ancho del contenedor*/
+}
