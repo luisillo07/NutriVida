@@ -1,0 +1,55 @@
+
+
+/*SECCIÓN NUTRICIONISTAS*/
+.lista-nutricionistas {
+    display: flex; /*le decimos que sea una grilla*/
+    gap: 20px; /*espacio entre tarjetas*/
+    padding: 20px; /*padding igual al del header*/
+}
+
+.tarjeta-nutricionista {
+    display: flex; /*imagen a la izquierda, tabla a la derecha*/
+    background-color: #DFEBE5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%; /*para que ocupe todo el ancho de su contenedor*/
+    box-sizing: border-box; /*para que el padding no afecte al ancho de la tarjeta*/
+    transition: box-shadow 0.2s, transform 0.1s;
+}
+
+.tarjeta-nutricionista:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.14); /*le damos una sombra a la tarjeta cuando el mouse esta encima de ella*/
+    transform: translateY(-3px); /*le decimos que se mueva hacia arriba 3px cuando el mouse esta encima de ella*/
+    background-color: #A7C4BC;
+    text-shadow: -0.5px -0.5px 0 #ffffff, 
+                  0.5px -0.5px 0 #ffffff, 
+                 -0.5px  0.5px 0 #ffffff, 
+                  0.5px  0.5px 0 #ffffff; /*le damos un efecto de sombra al texto para que se vea más bonito*/
+}
+ 
+.tarjeta-nutricionista .imagenes { /*con esto solo afectamos a las imágenes dentro de las tarjetas*/
+    width: 240px; /*sobreescribe el ancho de 100px por defecto para esta sección*/
+    height: 240px; /*sobreescribe el alto de 100px por defecto para esta sección*/
+    border-radius: 8px;
+    margin-right: 20px; /*espacio entre la imagen y la tabla*/
+}
+ 
+.tarjeta-nutricionista table { /*con esto solo afectamos a las tablas dentro de las tarjetas*/
+    flex: 1; /*ocupa el resto del espacio disponible*/
+    border-spacing: 10px; /*espacio entre las celdas de la tabla*/
+}
+ 
+.nombre-nutricionista {
+    font-family: "Montserrat", sans-serif; /*Le damos una fuente al texto(de momento de prueba)*/
+    font-size: 28px;
+    color: #2D3436;
+    height: 30px; /*altura de la celda para que no se vea tan apretado el texto*/
+}
+ 
+.info-nutricionista {
+    font-size: 14px;
+    color: #404845;
+    text-align: justify; /*justifica el texto para que se vea más ordenado*/
+    height: 100px; /*altura de la celda para que no se vea tan apretado el texto*/
+    width: 100%; /*para que ocupe todo el ancho de su contenedor*/
+}
