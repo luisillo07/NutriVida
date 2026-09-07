@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navegacion.css"> <!--estilos de navegacion-->
+    <link rel="stylesheet" href="/css/inicio.css"> <!--estilos del inicio-->
+    <link rel="stylesheet" href="/css/footer.css"> <!--estilos del footer-->
+    <link rel="stylesheet" href="/css/contacto.css"> <!--estilos del contacto-->
+    <script src="/js/funciones.js" defer></script> <!--funciones js-->
+    <script src="/js/contacto.js" defer></script> <!--funciones js-->
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1 id="titulo">NutriVida</h1>
+        <!---navegación-->
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="nutricionistas.html">Nutricionistas</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+
+        <!--botones de la navegación-->
+        <div class="b">
+            <a href="login.html" class="iniciar-sesion">Iniciar Sesión</a>
+            <a href="#" class="agendar-cita">Agendar Cita</a>
+        </div>
+    </header>
+
+    <footer>
+        <form id="form-contacto" novalidate>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
+            <p id="errorNombre"> </p>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" required>
+            <p id="errorCorreo"> </p>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required>
+            <p id="errorTelefono"> </p>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" required></textarea>
+            <p id="errorMensaje"> </p>
+
+            <button type="submit">Enviar consulta</button>
+            <p id="mensaje-confirmacion"></p>
+        </form>
+    </footer>
+</body>
+
+</html>
