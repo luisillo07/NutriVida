@@ -1,11 +1,65 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--  -->
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navegacion.css"> <!-- estilos de navegación -->
+    <link rel="stylesheet" href="/css/inicio.css"> <!-- estilos de inicio -->
+    <script src="/js/funciones.js" defer></script> <!--funciones js-->
     <title>Servicios</title>
 </head>
+
 <body>
-    
+    <!--Encabezado-->
+    <header>
+        <h1 id="titulo">NutriVida</h1>
+        <!---navegación-->
+        <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html" class="activo" >Servicios</a>
+            <a href="#">Nosotros</a>
+            <a href="nutricionistas.html">Nutricionistas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+    </main>
+
+    <footer class="footer"> <!--creamos el footer-->
+
+        <section class="footer-contenido"> <!--section del footer-->
+
+            <section class="footer-nutrivida"> 
+                <h3>NutriVida</h3>
+
+                <p>Clínica de Nutrición Especializada en Temuco, comprometida con tu salud y bienestar desde 2016.</p>
+            </section>
+
+            <nav class="footer-navegacion"> <!--navegación del footer-->
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="nutricionistas.html">Nutricionistas</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                </ul>
+            </nav>
+
+            <address class="footer-ubicacion"> <!--creamos un address para el "contacto"-->
+                <h5>Ubicación</h5>
+                <!--importamos un iframe directo de google maps-->
+                <iframe class="mapa-ubicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6406.418374455775!2d-72.5920174363592!3d-38.74030187186753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1788549148046!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </address>
+
+        </section>
+
+        <p class="footer-copy">© 2026 NutriVida. Todos los derechos reservados.</p>
+
+    </footer>
+
 </body>
+
 </html>
