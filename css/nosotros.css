@@ -1,0 +1,137 @@
+body {
+    margin: 0; /*quitamos el margen de la pagina*/
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #f5f5f5; /*color de fondo*/
+}
+
+
+/*PRESENTACION DE NOSOTROS*/
+.section-nosotros {
+    display: flex; /*coloca el texto y la imagen uno al lado del otro*/
+    align-items: center; /*centra los elementos*/
+    justify-content: space-between; /*separa el texto de la imagen*/
+    gap: 50px; /*espacio entre el texto y la imagen*/
+    padding: 60px; 
+}
+
+.texto-nosotros {
+    width: 50%; /*el texto ocupa la mitad*/
+}
+
+.texto-nosotros h2 {
+    color: #386458;
+    font-size: 45px;
+    margin-bottom: 20px; /*espacio debajo del titulo*/
+}
+
+.texto-nosotros p {
+    font-size: 18px;
+    line-height: 1.5; /*da un poco de espacio entre las lineas*/
+    color: #404845;
+}
+
+.img-nosotros {
+    width: 50%; /*la imagen ocupa la otra mitad*/
+    max-width: 700px; /*para que la imagen no se vea tan grande*/
+    height: auto; /*para que la imagen se ajuste sola*/
+    border-radius: 10px; /*redondea los bordes*/
+}
+
+
+/*NUESTRA HISTORIA*/
+.historia {
+    text-align: center; /*centra el texto*/
+    padding: 60px;
+    background-color: #eef5f7;
+}
+
+.historia h2 {
+    color: #386458;
+    font-size: 32px;
+}
+
+.historia p {
+    max-width: 800px; /*para que el texto no quede tan largo*/
+    margin: 15px auto; /*separa los textos y los centra*/
+    font-size: 18px;
+    line-height: 1.5; /*da espacio entre las lineas*/
+    color: #404845;
+}
+
+
+/*MISION Y VISION*/
+.mision-vision {
+    display: flex; /*coloca mision y vision uno al lado del otro*/
+    justify-content: center; /*centra las dos cajas*/
+    gap: 40px; /*espacio entre mision y vision*/
+    padding: 60px;
+}
+
+.mision {
+    width: 40%; /*ocupa el 40% del ancho disponible*/
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /*redondea los bordes*/
+}
+
+.vision {
+    width: 40%; /*ocupa el 40% del ancho disponible*/
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /*redondea los bordes*/
+}
+
+.mision h3 {
+    color: #386458;
+    font-size: 24px;
+}
+
+.vision h3 {
+    color: #386458;
+    font-size: 24px;
+}
+
+.mision p {
+    color: #404845;
+    line-height: 1.5; /*da espacio entre las lineas*/
+}
+
+.vision p {
+    color: #404845;
+    line-height: 1.5; /*da espacio entre las lineas*/
+}
+
+
+/*NUESTROS VALORES*/
+.valores {
+    text-align: center; /*centra el contenido*/
+    padding: 60px;
+    background-color: #eef5f7;
+}
+
+.valores h2 {
+    color: #386458;
+    font-size: 32px;
+    margin-bottom: 40px; /*separa el titulo de los valores*/
+}
+
+.valores article {
+    display: inline-block; /*coloca los valores uno al lado del otro*/
+    vertical-align: top; /*los deja alineados arriba*/
+    width: 25%; /*ancho de cada valor*/
+    margin: 15px; /*espacio entre cada valor*/
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.valores article h3 {
+    color: #386458;
+    font-size: 22px;
+}
+
+.valores article p {
+    color: #404845;
+    line-height: 1.5;
+}
