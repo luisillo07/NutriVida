@@ -2,3 +2,52 @@
     border: 2px solid #a3242f;
     background: #fbe9ea;
 }
+
+.campo-correcto {
+    border: 2px solid #4CAF50;
+    background: #e6f4ea;
+    text-align: center;
+}
+
+#form-contacto {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Column para que los elementos se apilen verticalmente */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding: 10px;
+    width: 40%;
+    height: 50%;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+form > label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Negrita */
+}
+
+form > input,
+form > textarea {
+    width: 50%;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #2D3436;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
